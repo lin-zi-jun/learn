@@ -7,3 +7,6 @@
 [submodule "shell"]
 	path = shell
 	url = https://github.com/lin-zi-jun/shell.git
+[submodule "tree"]
+	path = tree
+	url = https://github.com/lin-zi-jun/tree.git
