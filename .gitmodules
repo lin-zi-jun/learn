@@ -1,3 +1,6 @@
 [submodule "makeGIT"]
 	path = makeGIT
 	url = https://github.com/lin-zi-jun/makeGIT.git
+[submodule "html"]
+	path = html
+	url = https://github.com/lin-zi-jun/html.git
