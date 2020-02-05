@@ -1,0 +1,3 @@
+[submodule "makeGIT"]
+	path = makeGIT
+	url = https://github.com/lin-zi-jun/makeGIT.git
