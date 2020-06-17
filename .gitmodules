@@ -10,3 +10,6 @@
 [submodule "tree"]
 	path = tree
 	url = https://github.com/lin-zi-jun/tree.git
+[submodule "C"]
+	path = C
+	url = https://github.com/lin-zi-jun/C.git
