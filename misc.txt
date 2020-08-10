@@ -1,6 +1,0 @@
-git patch
-git am *.patch
-git am --abort
-
-spiffs:
-./mkspiffs -c /Users/chirag/Downloads/cuco_wav -b 4096 -p 256 -s 0x600000 wavfiles.bin

@@ -1,0 +1,10 @@
+git patch
+git am *.patch
+git am --abort
+
+spiffs:
+./mkspiffs -c /Users/chirag/Downloads/cuco_wav -b 4096 -p 256 -s 0x600000 wavfiles.bin
+/home/lin/esp/alexa/esp-alexa/tools/mkspiffs/linux64/mkspiffs -c /home/lin/esp/alexa/esp-alexa/examples/amazon_alexa/components/mp3 -b 4096 -p 256 -s 0x400000 mp3files.bin
+
+esptool_py:
+python $IDF_PATH/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 921600 write_flash 0x9E0000 mp3files.bin
