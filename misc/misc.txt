@@ -1,10 +1,64 @@
+----------------------------------esp32-------------------------------
+-------------1.打补丁
 git patch
 git am *.patch
 git am --abort
 
-spiffs:
+-------------2.spiffs 文件系统
+生成二进制
 ./mkspiffs -c /Users/chirag/Downloads/cuco_wav -b 4096 -p 256 -s 0x600000 wavfiles.bin
 /home/lin/esp/alexa/esp-alexa/tools/mkspiffs/linux64/mkspiffs -c /home/lin/esp/alexa/esp-alexa/examples/amazon_alexa/components/mp3 -b 4096 -p 256 -s 0x400000 mp3files.bin
 
+烧录二进制文件到指定区域
 esptool_py:
 python $IDF_PATH/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0 --baud 921600 write_flash 0x9E0000 mp3files.bin
+
+
+------------iperf
+服务器端:sta ssid password
+iperf -s -i 3
+客户端:  sta ssid password
+iperf -c 192.168.1.99 -i 3 -t 1000
+
+        Interval Bandwidth
+   0-   3 sec       2.66 Mbits/sec
+   3-   6 sec       3.94 Mbits/sec
+   6-   9 sec       0.16 Mbits/sec
+   9-  12 sec       0.20 Mbits/sec
+  12-  15 sec       0.24 Mbits/sec
+  15-  18 sec       1.87 Mbits/sec
+  18-  21 sec       1.71 Mbits/sec
+  21-  24 sec       2.86 Mbits/sec
+  24-  27 sec       1.73 Mbits/sec
+  27-  30 sec       1.98 Mbits/sec
+   0-  30 sec       1.73 Mbits/sec
+
+
+
+
+
+------------3.esp32硬件资源
+1.片上存储器
+– 448 KB Internal ROM
+– 520 KB Internal SRAM
+– 8 KB RTC FAST Memory
+– 8 KB RTC SLOW Memory
+
+
+2.外设
+– 41 个外设模块
+
+
+
+
+3.DMA
+– 13 个具有 DMA 功能的模块
+
+4.复位 CPU 复位，内核复位，系统复位
+
+
+
+
+
+
+
