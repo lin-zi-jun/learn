@@ -3,3 +3,9 @@ du -sh
 
 指定深度查询
 du -h --max-depth=2
+
+打包成tar.gz格式压缩包
+tar -zcvf 1.tar.gz /1
+
+解压
+tar zxvf 1.tar.gz
