@@ -9,3 +9,6 @@ tar -zcvf 1.tar.gz /1
 
 解压
 tar zxvf 1.tar.gz
+
+查找文件夹
+find . -name build
