@@ -76,7 +76,12 @@ iperf -c 192.168.1.99 -i 3 -t 1000
 4.复位 CPU 复位，内核复位，系统复位
 
 
+ESP32-specific ───> Support for external, SPI-connected RAM 
 
+
+5-tree
+tree -L n // 列出n层结构目录
+tree -d // 列出目录结构
 
 
 
