@@ -1,0 +1,4 @@
+ctrl+d 选中下一个相同的内容
+选中要移动的行，使用 ALT+上下键
+ctrl+p 打开 Palette 输入文件名快速打开
+ctrl+k z
