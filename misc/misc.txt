@@ -83,6 +83,12 @@ ESP32-specific ───> Support for external, SPI-connected RAM
 tree -L n // 列出n层结构目录
 tree -d // 列出目录结构
 
+6-查看工具链
+xtensa-esp32-elf-gcc -v
+
+
+
+
 
 
 
