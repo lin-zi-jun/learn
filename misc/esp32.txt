@@ -1,0 +1,18 @@
+  其中，编译和烧写有一些比较有用的命令，文档中并没有完全写出来：
+    • make menuconfig – 运行配置菜单，做过kernel开发的会非常熟悉.
+    • make defconfig - 为所有的配置项设置默认值
+    • make all – 编译所有代码.
+    • make flash – 把编译后的Bin文件烧写到ESP32中.
+    • make clean – 清除编译产生的文件.
+    • make monitor – 连接ESP32串口，并且输出ESP32的打印信息.
+    • make erase_flash – 擦除ESP32上的整个Flash.
+    • make size - 显示Bin文件中各个部分的大小
+    • make size-components -, size-files - 每个模块所占内存的大小，这个在项目代码膨胀后还是比较有用的。
+    • make app – 编译app.bin
+    • make app-flash – 烧写app.bin
+    其他的几个也可以顾名思义：
+    • make app-clean –
+    • make bootloader –
+    • make bootloader-flash –
+    • make bootloader-clean –
+    • make partition-table –
