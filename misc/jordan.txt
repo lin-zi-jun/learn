@@ -1,0 +1,3 @@
+sudo docker container ls
+
+sudo docker container exec -it 010e1b83593b /root/Start.sh
