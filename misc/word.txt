@@ -1,0 +1,5 @@
+AES:Advanced Encryption Standard 高级加密标准
+
+
+FFS:
+WWA:work with alexa
