@@ -12,3 +12,12 @@ tar zxvf 1.tar.gz
 
 查找文件夹
 find . -name build
+
+5-tree
+tree -L n // 列出n层结构目录
+tree -d // 列出目录结构
+
+
+iwlist wlp3s0b1 scan
+
+sudo dpkg -i <package.deb>
