@@ -87,6 +87,9 @@ tree -d // 列出目录结构
 xtensa-esp32-elf-gcc -v
 
 
+7-获取url证书链
+openssl s_client -showcerts -connect jordan-ota-test.s3.amazonaws.com:443 </dev/null
+
 
 
 
