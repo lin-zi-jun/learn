@@ -96,4 +96,4 @@ openssl s_client -showcerts -connect jordan-ota-test.s3.amazonaws.com:443 </dev/
 
 
 
-
+generic_sum SHA256

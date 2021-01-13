@@ -1,0 +1,35 @@
+
+./flashimage.py --eraseflash
+
+./flashimage.py --app ffs --port /dev/ttyUSB0
+
+python provision.py -p /dev/ttyUSB0 -c provision -x
+
+python provision.py -p  /dev/ttyUSB0 -c get_csr
+
+python provision.py -p /dev/ttyUSB0 -c save_cert -f 
+
+python $IDF_PATH/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0    --baud 2000000 write_flash 0x10000 ./certificates/aia_device_certificates
+
+python $IDF_PATH/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0    --baud 2000000 write_flash 0x760000 ./certificates/ffs_device_certificates
+
+python $IDF_PATH/components/esptool_py/esptool/esptool.py --chip esp32 --port $ESPPORT --baud 230400 read_flash 0x760000 0x70000 ffs_device_ce
+
+python $IDF_PATH/components/nvs_flash/nvs_partition_generator/nvs_partition_gen.py generate mfg_config.csv SSE_00.bin  0x6000
+
+python $IDF_PATH/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0    --baud 2000000 write_flash 0x520000
+
+python $IDF_PATH/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0    --baud 2000000 write_flash 0x520000 build/SSE  0x10000  /mnt/hgfs/share/cert/SenseE/aia/SSE_00
+
+tree -L n // 列出n层结构目录
+tree -d // 列出目录结构
+
+tar -zcvf 1.tar.gz /1
+
+tar zxvf 1.tar.gz
+
+find . -name build
+
+grep -rn CERTIFICATE
+
+adb logcat -vtime > logcat.txt
