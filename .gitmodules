@@ -19,3 +19,6 @@
 [submodule "mbedtls"]
 	path = mbedtls
 	url = https://github.com/lin-zi-jun/mbedtls.git
+[submodule "aws-iot-device-sdk-embedded-C"]
+	path = aws-iot-device-sdk-embedded-C
+	url = https://github.com/lin-zi-jun/aws-iot-device-sdk-embedded-C.git
