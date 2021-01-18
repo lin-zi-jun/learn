@@ -16,3 +16,6 @@
 [submodule "ESP32-Developer-Guide"]
 	path = ESP32-Developer-Guide
 	url = https://github.com/HX-IoT/ESP32-Developer-Guide.git
+[submodule "mbedtls"]
+	path = mbedtls
+	url = https://github.com/lin-zi-jun/mbedtls.git
