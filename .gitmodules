@@ -22,3 +22,6 @@
 [submodule "aws-iot"]
 	path = aws-iot
 	url = https://github.com/lin-zi-jun/aws-iot.git
+[submodule "vim_iterator"]
+	path = vim_iterator
+	url = https://github.com/lin-zi-jun/vim_iterator.git

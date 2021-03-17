@@ -19,7 +19,9 @@ python $IDF_PATH/components/nvs_flash/nvs_partition_generator/nvs_partition_gen.
 
 python $IDF_PATH/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0    --baud 2000000 write_flash 0x520000
 
-python $IDF_PATH/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0    --baud 2000000 write_flash 0x520000 build/SSE  0x10000  /mnt/hgfs/share/cert/SenseE/aia/SSE_00
+python $IDF_PATH/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0    --baud 2000000 write_flash 0x520000 /home/jordan/sense_E/ais_sdk_src/examples/amazon_aia/build/SSE  0x20000 /home/jordan/sense_E/ais_sdk_src/examples/ffs/build/SSE 0x10000 /home/jordan/sense_E/cert/cert/SenseE/aia/SSE
+
+python $IDF_PATH/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0    --baud 2000000 write_flash 0x10000 /home/jordan/sense_E/cert/cert/SenseE/aia/SSE
 
 tree -L n // 列出n层结构目录
 tree -d // 列出目录结构

@@ -21,3 +21,21 @@ g*(g#)        //此命令与上条命令相似, 只不过它不完全匹配光�
 :s/old/new/g         //用new替换行中所有的old
 :n,m s/old/new/g     //用new替换从n到m行里所有的old
 :%s/old/new/g      //用new替换当前文件里所有的old
+
+u   撤销上一步的操作
+Ctrl+r 恢复上一步被撤销的操作
+
+
+
+//set compile environment
+ctags -R 
+set tags+=/home/helloworld/tags
+Ctrl + ]  
+Ctrl + o
+
+
+//cursor movement
+k            上移                k
+h            左移            h        l
+l            右移                j
+j            下移
