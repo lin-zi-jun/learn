@@ -35,3 +35,6 @@ find . -name build
 grep -rn CERTIFICATE
 
 adb logcat -vtime > logcat.txt
+
+Ctrl + a：将光标移到所在行首(head)
+Ctrl + e：将光标移到所在行尾（end）

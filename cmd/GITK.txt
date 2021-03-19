@@ -1,0 +1,1 @@
+gitk --follow filename
