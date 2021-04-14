@@ -1,38 +1,10 @@
 :set  nu     //显示行号
 :set nonu    //取消显示行号
-n+        //向下跳n行
-n-         //向上跳n行
-nG        //跳到行号为n的行
-G           //跳至文件的底部
-g         //跳转到文件头部
-
-
-
-/keyword     //向光标下搜索keyword字符串，keyword可以是正则表达式
-?keyword     //向光标上搜索keyword字符串
-n           //向下搜索前一个搜素动作
-N         //向上搜索前一个搜索动作
-
-*(#)      //当光标停留在某个单词上时, 输入这条命令表示查找与该单词匹配的下(上)一个单词. 同样, 再输入 n 查找下一个匹配处, 输入 N 反方向查找.
-
-g*(g#)        //此命令与上条命令相似, 只不过它不完全匹配光标所在处的单词, 而是匹配包含该单词的所有字符串.
-
-:s/old/new      //用new替换行中首次出现的old
-:s/old/new/g         //用new替换行中所有的old
-:n,m s/old/new/g     //用new替换从n到m行里所有的old
-:%s/old/new/g      //用new替换当前文件里所有的old
-
 u   撤销上一步的操作
-Ctrl+r 恢复上一步被撤销的操作
+Ctrl + r: do again
 
-
-
-//set compile environment
 ctags -R 
 set tags+=/home/helloworld/tags
-Ctrl + ]  
-Ctrl + o
-
 
 //cursor movement
 k            上移                k
@@ -41,20 +13,22 @@ l            右移                j
 j            下移
 
 gg，跳到文本的第一行
-
 shift+g，跳到文本的最后一行
-
 行首:shift + 6  
 行尾:shifr + 4
-
 
 :sp file2 //水平分割打开第二个文件，sp=split
 :vsp file2 //垂直分割打开第二个文件，vsp=vsplit
 
-:n  #切换到下一个文件
-:N  #切换到上一个文件
 :files  #列出当前打开的所有文件
 
 多窗口编辑的窗口光标切换：ctrl + w + 上下的方向键
 
-命令模式下，按住V，然后使用左右箭头(← →)选中要删除的字符，按X删除
+tree -L n // 列出n层结构目录
+tree -d // 列出目录结构
+
+Ctrl + a：将光标移到所在行首(head)
+Ctrl + e：将光标移到所在行尾（end）
+
+delete:x
+rm \n : J

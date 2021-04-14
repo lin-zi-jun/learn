@@ -1,0 +1,7 @@
+# 2. 查看全部本地的镜像
+docker images
+
+#查看当前所有状态的容器列表 ID截断列表 l:laster
+docker ps -q -l
+
+

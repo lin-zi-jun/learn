@@ -1,0 +1,1 @@
+search history : ctrl + r + [you need to search content]
