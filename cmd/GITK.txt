@@ -1,1 +1,6 @@
 gitk --follow filename
+
+
+git pull
+git push
+

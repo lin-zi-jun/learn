@@ -4,4 +4,11 @@ docker images
 #查看当前所有状态的容器列表 ID截断列表 l:laster
 docker ps -q -l
 
-
+docker -v
+docker version
+docker info
+docker rmi -f hello-world
+docker run hello-world
+docker search hello-world
+docker ps
+docker exec -it mysql bash
