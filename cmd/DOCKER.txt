@@ -1,9 +1,5 @@
-# 2. 查看全部本地的镜像
 docker images
-
-#查看当前所有状态的容器列表 ID截断列表 l:laster
 docker ps -q -l
-
 docker -v
 docker version
 docker info
@@ -12,3 +8,10 @@ docker run hello-world
 docker search hello-world
 docker ps
 docker exec -it mysql bash
+docker run -d -p 80:80 docker/getting-started
+docker container ls
+docker container ls -a
+sudo docker run -itd --restart=always -p 10029:22 -v /home/jordan/sense_E:/home/sugr --name sensee2 sensee2:4.0 /root/Start.sh
+docker start 427d3f819dbf
+docker load -i  ubuntu-1804-xcc12-env-save20210419.tar
+docker run -itd --privileged -p 17722:22 -v ~/tcard:/tcard  xcc12_env bash

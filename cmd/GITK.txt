@@ -4,3 +4,6 @@ gitk --follow filename
 git pull
 git push
 
+git log --pretty=oneline speech_recognizer.c
+git log speech_recognizer.c
+git show
