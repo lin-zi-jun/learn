@@ -3,8 +3,12 @@ tar -zcvf 1.tar.gz /1
 tar zxvf 1.tar.gz
 
 find . -name build
+find . -name "*.bin"
 
 grep -rn CERTIFICATE
+
+tree -L n // 列出n层结构目录
+tree -d // 列出目录结构
 
 # -eq           //等于
 # -ne           //不等于

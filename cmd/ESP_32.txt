@@ -7,3 +7,9 @@ docker start  `docker ps -q -l`; ssh sugr@localhost -p 10031; /bin/bash;
 python $IDF_PATH/components/esptool_py/esptool/esptool.py --chip esp32 --port /dev/ttyUSB0    --baud 2000000 write_flash 0x520000
 
 python $IDF_PATH/components/esptool_py/esptool/esptool.py --chip esp32 --port $ESPPORT --baud 230400 read_flash 0xF90000 0x70000 
+
+alexa,,play task one from acoustic certification test
+alexa,,play music
+vol-up
+vol-down
+

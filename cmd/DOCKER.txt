@@ -3,6 +3,7 @@ docker ps -q -l
 docker -v
 docker version
 docker info
+docker rm 4ade0fa0d1eb
 docker rmi -f hello-world
 docker run hello-world
 docker search hello-world
@@ -11,6 +12,9 @@ docker exec -it mysql bash
 docker run -d -p 80:80 docker/getting-started
 docker container ls
 docker container ls -a
+
+docker run -d -i -t 7e0aa2d69a15 /bin/bash
+docker run -dit sundervel/lwipimage bash
 sudo docker run -itd --restart=always -p 10029:22 -v /home/jordan/sense_E:/home/sugr --name sensee2 sensee2:4.0 /root/Start.sh
 docker start 427d3f819dbf
 docker load -i  ubuntu-1804-xcc12-env-save20210419.tar

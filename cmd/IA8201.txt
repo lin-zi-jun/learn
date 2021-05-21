@@ -1,3 +1,0 @@
-xt-xcc -v
-xt-run hello
-xt-xcc -o hello  hello.c
