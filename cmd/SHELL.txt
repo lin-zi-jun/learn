@@ -10,6 +10,8 @@ grep -rn CERTIFICATE
 tree -L n // 列出n层结构目录
 tree -d // 列出目录结构
 
+du -ah -d1
+
 # -eq           //等于
 # -ne           //不等于
 # -gt            //大于 （greater ）
