@@ -1,9 +1,8 @@
 gitk --follow filename
 
 
-git pull
-git push
-
 git log --pretty=oneline speech_recognizer.c
 git log speech_recognizer.c
+git log -p ./components/orb_p20pro/src/user_data.c
+
 git show
