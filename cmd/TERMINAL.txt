@@ -1,1 +1,49 @@
-search history : ctrl + r + [you need to search content]
+1. 光标、行编辑-----------------------------
+快捷键	功能
+Alt+F	光标向前移动一个单词
+Alt+B	光标向后移动一个单词
+Ctrl+F	光标向前移动一格
+Ctrl+B	光标向后移动一格
+Ctrl+A	光标移动到行首
+Ctrl+E	光标移动至行尾
+Ctrl+C	另起新行
+Ctrl+U	清空当前行
+Ctrl+D	删除当前字符
+Ctrl+L	清屏
+Esc+W	删除光标之前的所有字符
+Ctrl+K	删除从光标到行尾的左右字符
+Ctrl+Y	粘贴刚才删除的字符
+Ctrl+(X U)	撤销刚才的操作
+
+2. 历史命令------------------------------
+快捷键	功能
+!!	上一条命令
+!pre	执行以pre为开头的最新命令
+!n	执行历史
+Alt+<	历史第一项
+Alt+>	历史最后一项，即当前输入的命令
+Ctrl+R	查询历史
+Ctrl+G	从历史搜索模式退出
+
+3. 窗口、标签---------------------------
+快捷键	功能
+Ctrl+Shift+T	新建标签页
+Ctrl+Shift+W	关闭标签页
+Ctrl+PageUp	前一标签页
+Ctrl+PageDown	后一标签页
+Ctrl+Shift+PageUp	标签页左移
+Ctrl+Shift+PageDown	标签页右移
+Alt+2	切换到标签 2
+Ctrl+Shift+N	新建窗口
+Ctrl+Shift+Q	关闭终端
+4. GNOME 桌面快捷键---------------------
+快捷键	功能
+Alt+F1	打开主菜单
+Alt+F2	运行命令
+Alt+F10	窗口最大化
+
+5. 文件管理器--------------------------
+快捷键	功能
+Ctrl+H	显示隐藏文件
+Ctrl+T	新建标签
+Ctrl+W	关闭标签

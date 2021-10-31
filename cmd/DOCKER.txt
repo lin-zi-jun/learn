@@ -10,14 +10,14 @@ docker search hello-world
 docker ps
 docker exec -it mysql bash
 docker run -d -p 80:80 docker/getting-started
-docker container ls
-docker container ls -a
 
 docker run -d -i -t --name lin_docker  7e0aa2d69a15 /bin/bash
-docker run -dit sundervel/lwipimage bash
 sudo docker run -itd --restart=always -p 10029:22 -v /home/jordan/sense_E:/home/sugr --name sensee2 sensee2:4.0 /root/Start.sh
 docker start 427d3f819dbf
 docker load -i  ubuntu-1804-xcc12-env-save20210419.tar
-docker run -itd --privileged -p 17722:22 -v ~/tcard:/tcard  xcc12_env bash
 
 sudo docker run -itd --restart=always -p 10032:22 -v /home/jordan/ORB/HLINK:/home/orb/ --name HLINK3861 hlink:v1.3 /ORB_ENV/restart.sh
+
+docker commit 6a40b2bd81f0 hlink:v1.4
+
+docker run  -itd  --restart=always -p 10035:22 --device /dev/ttyUSB0:/dev/ttyUSB0  -v /home/jordan/ORB/esp32/:/home/orb/ --name esp32-c3_3 esp32-c3:v1.2 /ORB_ENV/restart.sh
