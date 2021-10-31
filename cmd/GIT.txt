@@ -1,5 +1,4 @@
-gitk --follow filename
-
+git config --global -l
 
 git log --pretty=oneline speech_recognizer.c
 git log speech_recognizer.c
