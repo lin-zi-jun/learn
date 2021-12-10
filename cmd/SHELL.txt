@@ -11,6 +11,9 @@ tree -L n // 列出n层结构目录
 tree -d // 列出目录结构
 
 du -ah -d1
+baobab
+
+env|grep -i proxy
 
 # -eq           //等于
 # -ne           //不等于
